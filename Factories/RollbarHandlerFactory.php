@@ -44,6 +44,8 @@ class RollbarHandlerFactory
 
     public function createRollbarHandler(): RollbarHandler
     {
-        return new RollbarHandler(Rollbar::logger(), LogLevel::ERROR);
+        return new RollbarHandler(Rollbar::logger(), LogLevel::INFO);
     }
 }
+
+
